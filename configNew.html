@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amaranth10</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <section class="headerWrap">
+      <div class="header">
+        <h1>
+          <a href="index.html"
+            ><img src="./img/img_logo_black.d8074660.png" alt="아마란스 로고"
+          /></a>
+        </h1>
+        <div class="headerIcon">
+          <div>
+            <span
+              ><img src="./img/ico_misc_alert.1d93026a.png" alt="알람"
+            /></span>
+            <span
+              ><img src="./img/ico_misc_org.c05a7a75.png" alt="공유"
+            /></span>
+          </div>
+          <div>
+            <div></div>
+            <h3>김더존 과장</h3>
+          </div>
+        </div>
+      </div>
+      <div class="headerTitle">
+        <div><img src="./img/ic_snb_tab_menu.43ccb9e6.png" alt="" /></div>
+        <h2>모듈 명</h2>
+      </div>
+    </section>
+    <section class="sideLnbWrap">
+      <div class="sideLnb">
+        <article>
+          <h2>
+            환경설정
+            <span>
+              <img
+                src="./img/ic_arrow_down_01_s_normal.57adc5b1.png"
+                alt="하위 메뉴 오픈"
+              />
+            </span>
+          </h2>
+          <ul>
+            <li>
+              <div>
+                <span><img src="./img/navicon.png" alt="" /></span>
+                <a href="config.html">
+                  <span class="active">정규직</span>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div>
+                <span><img src="./img/navicon.png" alt="" /></span>
+                <span>일용직</span>
+              </div>
+            </li>
+            <li>
+              <div>
+                <span><img src="./img/navicon.png" alt="" /></span>
+                <span>임원</span>
+              </div>
+            </li>
+            <li>
+              <div>
+                <span><img src="./img/navicon.png" alt="" /></span>
+                <span>프리랜서</span>
+              </div>
+            </li>
+          </ul>
+        </article>
+        <article>
+          <h2>
+            근로계약서 작성
+            <span>
+              <img
+                src="./img/ic_arrow_down_01_s_normal.57adc5b1.png"
+                alt="하위 메뉴 오픈"
+              />
+            </span>
+          </h2>
+          <ul>
+            <li>
+              <div>
+                <span><img src="./img/navicon.png" alt="" /></span>
+                <span>정규직</span>
+              </div>
+            </li>
+            <li>
+              <div>
+                <span><img src="./img/navicon.png" alt="" /></span>
+                <span>일용직</span>
+              </div>
+            </li>
+            <li>
+              <div>
+                <span><img src="./img/navicon.png" alt="" /></span>
+                <span>임원</span>
+              </div>
+            </li>
+            <li>
+              <div>
+                <span><img src="./img/navicon.png" alt="" /></span>
+                <span>프리랜서</span>
+              </div>
+            </li>
+          </ul>
+        </article>
+        <article>
+          <h2>
+            근로계약서 목록
+            <span>
+              <img
+                src="./img/ic_arrow_down_01_s_normal.57adc5b1.png"
+                alt="하위 메뉴 오픈"
+              />
+            </span>
+          </h2>
+          <ul>
+            <li>
+              <div>
+                <span><img src="./img/navicon.png" alt="" /></span>
+                <span>작성중 목록</span>
+              </div>
+            </li>
+            <li>
+              <div>
+                <span><img src="./img/navicon.png" alt="" /></span>
+                <span>서명대기 목록</span>
+              </div>
+            </li>
+            <li>
+              <div>
+                <span><img src="./img/navicon.png" alt="" /></span>
+                <span>서명완료 목록</span>
+              </div>
+            </li>
+          </ul>
+        </article>
+      </div>
+      <div class="sizeTool">
+        <span></span>
+      </div>
+    </section>
+    <section class="contents">
+      <div>
+        <article class="contentHeader">
+          <h2>정규직 환경설정</h2>
+          <div class="iconWrap">
+            <a href="configNew.html">
+              <span>
+                <img src="./img/writeicon.png" alt="작성" />
+              </span>
+            </a>
+            <span>
+              <img src="./img/deleteicon.png" alt="삭제" />
+            </span>
+            <span>
+              <img
+                src="./img/icon-func-favorite-off.70853147.png"
+                alt="즐겨찾기"
+              />
+            </span>
+          </div>
+        </article>
+        <article>
+          <form action="/" class="configForm" method="get">
+            <table>
+              <tr>
+                <td colspan="2">
+                  <label for="typeName">타입명</label>
+                </td>
+                <td>
+                  <input type="text" id="typeName" name="typename" />
+                </td>
+              </tr>
+              <tr>
+                <td rowspan="5">근로조건</td>
+                <td>
+                  <label for="place">근무장소</label>
+                </td>
+                <td>
+                  <input type="text" id="place" name="place" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="workType">근로형태</label>
+                </td>
+                <td>
+                  <select name="workType" id="workType">
+                    <option value="workType_1">일반근로</option>
+                    <option value="workType_2">단시간근로</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="date">수습기간</label>
+                </td>
+                <td>
+                  <select name="date" id="date">
+                    <option value="3">3개월</option>
+                    <option value="2">2개월</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label>임금산정기간</label>
+                </td>
+                <td>
+                  <select name="wgclPrd1">
+                    <option value="wgclPrd1">매월</option>
+                  </select>
+                  <select name="wgclPrd2">
+                    <option value="wgclPrd2">1일</option>
+                  </select>
+                  <select name="wgclPrd3">
+                    <option value="wgclPrd3">12개월</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label>임금지급시기 및 방법</label>
+                </td>
+                <td>
+                  <select name="PayWages1">
+                    <option value="PayWages1">당월</option>
+                  </select>
+                  <select name="PayWages2">
+                    <option value="PayWages2">1일</option>
+                  </select>
+                  <input type="radio" name="method" id="bank" />
+                  <label for="bank">계좌이체</label>
+                  <input type="radio" name="method" id="direct" />
+                  <label for="direct">직접지급</label>
+                </td>
+              </tr>
+              <tr>
+                <td rowspan="6">소정근로일/근무시간</td>
+                <td><label>유급주휴일</label></td>
+                <td>
+                  <input type="checkbox" />월 <input type="checkbox" />화
+                  <input type="checkbox" />수 <input type="checkbox" />목
+                  <input type="checkbox" />금 <input type="checkbox" />토
+                  <input type="checkbox" />일
+                </td>
+              </tr>
+              <tr>
+                <td><label>유급휴일</label></td>
+                <td>
+                  <input type="checkbox" />월 <input type="checkbox" />화
+                  <input type="checkbox" />수 <input type="checkbox" />목
+                  <input type="checkbox" />금 <input type="checkbox" />토
+                  <input type="checkbox" />일
+                </td>
+              </tr>
+              <tr>
+                <td><label>무급휴일</label></td>
+                <td>
+                  <input type="checkbox" />월 <input type="checkbox" />화
+                  <input type="checkbox" />수 <input type="checkbox" />목
+                  <input type="checkbox" />금 <input type="checkbox" />토
+                  <input type="checkbox" />일
+                </td>
+              </tr>
+              <tr>
+                <td><label>소정근로일 [+]</label></td>
+                <td>
+                  <input type="checkbox" />월 <input type="checkbox" />화
+                  <input type="checkbox" />수 <input type="checkbox" />목
+                  <input type="checkbox" />금 <input type="checkbox" />토
+                  <input type="checkbox" />일
+                </td>
+              </tr>
+              <tr>
+                <td><label>시,종업시간</label></td>
+                <td>
+                  <select name="" id="">
+                    <option value="">09</option>
+                  </select>
+                  <span> : </span>
+                  <select>
+                    <option value="">00</option>
+                  </select>
+                  <span> ~ </span>
+                  <select name="" id="">
+                    <option value="">18</option>
+                  </select>
+                  <span> : </span>
+                  <select name="" id="">
+                    <option value="">00</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td><label>휴게시간 [+]</label></td>
+                <td>
+                  <select name="" id="">
+                    <option value="">12</option>
+                  </select>
+                  <span> : </span>
+                  <select>
+                    <option value="">00</option>
+                  </select>
+                  <span> ~ </span>
+                  <select name="" id="">
+                    <option value="">13</option>
+                  </select>
+                  <span> : </span>
+                  <select name="" id="">
+                    <option value="">00</option>
+                  </select>
+                </td>
+              </tr>
+            </table>
+            <button>전송</button>
+          </form>
+        </article>
+      </div>
+    </section>
+  </body>
+</html>

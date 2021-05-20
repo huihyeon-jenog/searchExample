@@ -1,0 +1,308 @@
+h1,
+h2,
+h3,
+body,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+li {
+  list-style: none;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.headerWrap {
+  height: 94px;
+}
+
+.header {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  line-height: 50px;
+  padding: 0 10px;
+}
+
+.header .headerIcon > div h3 {
+  font-size: 12px;
+}
+.header .headerIcon > div {
+  display: flex;
+  align-items: center;
+}
+.header .headerIcon > div > div {
+  width: 32px;
+  height: 32px;
+  background: url(./img/img.png) no-repeat 50%;
+  border: 1px solid #e6e6e6;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.header .headerIcon {
+  display: flex;
+}
+
+.header .headerIcon img {
+  height: 30px;
+  width: 30px;
+  align-items: center;
+  display: flex;
+  margin-left: 10px;
+}
+
+.header > h1 img {
+  width: 123px;
+  height: 16px;
+}
+
+.headerTitle {
+  width: 100%;
+  height: 44px;
+  background-color: #1c90fb;
+  display: flex;
+}
+.headerTitle > div {
+  background: #0c76d8;
+  position: relative;
+  width: 44px;
+}
+
+.headerTitle > div img {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.headerTitle h2 {
+  color: white;
+  font-size: 18px;
+  line-height: 44px;
+  padding-left: 10px;
+}
+
+.sideLnbWrap {
+  width: 194px;
+  height: 100vh;
+  position: relative;
+  display: flex;
+}
+.sideLnbWrap .sideLnb {
+  width: 100%;
+}
+.sideLnbWrap .sideLnb article > h2 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  padding: 15px 5px 5px 10px;
+  border: 1px solid #e6e6e6;
+  border-right: none;
+  background-color: #f6f8fa;
+}
+
+.sideLnbWrap .sideLnb article > h2 img {
+  width: 20px;
+  height: 20px;
+}
+
+.sideLnbWrap .sideLnb article ul li {
+  margin: 15px 0px 15px 20px;
+  font-size: 13px;
+  font-weight: 600;
+  height: auto;
+}
+
+.sideLnbWrap .sideLnb article ul li > div .active {
+  color: #1c90fb;
+}
+
+.sizeTool {
+  background-color: #f6f8fa;
+  width: 5px;
+  height: 100%;
+  position: relative;
+  border: 1px solid #e6e6e6;
+}
+
+.sizeTool > span {
+  display: block;
+  width: 3px;
+  height: 15px;
+  background: #b4bcc5;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.contents {
+  position: absolute;
+  left: 195px;
+  top: 94px;
+  height: 100%;
+  width: 1700px;
+}
+
+.contents .contentHeader {
+  height: 49px;
+  border-bottom: 1px solid #e6e6e6;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contents .contentHeader .iconWrap > span {
+  margin-left: 10px;
+  cursor: pointer;
+}
+.contents .contentHeader h2 {
+  font-size: 18px;
+}
+
+.contents .searchWrap {
+  display: flex;
+  border: 1px solid #e6e6e6;
+  align-items: center;
+  justify-content: space-between;
+  width: 1680px;
+  height: 40px;
+  margin: 20px 15px;
+}
+
+.contents .searchWrap label {
+  display: inline-block;
+  width: 120px;
+  text-align: right;
+  padding-right: 6px;
+  margin-left: 4px;
+}
+
+.contents .searchWrap input {
+  width: 170px;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.contents .searchWrap .search {
+  border: 1px solid #e6e6e6;
+  margin: 0 8px 0 4px;
+  width: 30px;
+  position: relative;
+  height: 25px;
+  cursor: pointer;
+}
+
+.contents .searchWrap .search img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+}
+.contents .contentTable table {
+  width: 1680px;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  margin: 20px 15px;
+  border-collapse: collapse;
+}
+
+.contents .contentTable table tr {
+  border-bottom: 1px solid #e6e6e6;
+  height: 32px;
+}
+
+.contents .contentTable table thead {
+  background: #e6e6e6;
+}
+
+table tr td,
+table tr th {
+  border: 1px solid #d9d9d9;
+}
+.contents .contentTable table tr td:first-child {
+  text-align: center;
+  padding: 0;
+  width: 20px;
+}
+.contents .contentTable table tr td {
+  padding-left: 8px;
+}
+.contents .contentTable table tr td:last-child {
+  text-align: center;
+  padding: 0;
+}
+
+.drawBarWrap {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  background: #50596c;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  color: white;
+}
+
+.drawBarWrap .count {
+  color: #2ab1c0;
+  font-weight: 600;
+}
+.drawBarWrap div:first-child {
+  margin-left: 40px;
+}
+
+.drawBarWrap button {
+  border: 1px solid white;
+  background: none;
+  color: white;
+  font-size: 18px;
+  margin-right: 25px;
+  cursor: pointer;
+  width: 80px;
+  height: 40px;
+}
+
+.modalWrap {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.alertWrap {
+  width: 400px;
+  height: auto;
+  border: 1px solid #b9b9b9;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.alertWrap > img {
+  margin: 30px 0 20px 0;
+}
+
+.alertWrap > h2 {
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+.alertWrap > .alertBtnWrap {
+  margin-bottom: 30px;
+}

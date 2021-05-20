@@ -1,0 +1,11 @@
+.configForm table {
+  width: 1680px;
+}
+.configForm table tr td {
+  text-align: left;
+}
+
+.configForm table tr td:first-child,
+.configForm table tr td:nth-child(1) {
+  width: 10%;
+}
