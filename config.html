@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amaranth10</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <section class="headerWrap">
+      <div class="header">
+        <h1>
+          <a href="index.html"
+            ><img src="./img/img_logo_black.d8074660.png" alt="아마란스 로고"
+          /></a>
+        </h1>
+        <div class="headerIcon">
+          <div>
+            <span
+              ><img src="./img/ico_misc_alert.1d93026a.png" alt="알람"
+            /></span>
+            <span
+              ><img src="./img/ico_misc_org.c05a7a75.png" alt="공유"
+            /></span>
+          </div>
+          <div>
+            <div></div>
+            <h3>김더존 과장</h3>
+          </div>
+        </div>
+      </div>
+      <div class="headerTitle">
+        <div><img src="./img/ic_snb_tab_menu.43ccb9e6.png" alt="" /></div>
+        <h2>모듈 명</h2>
+      </div>
+    </section>
+    <section class="sideLnbWrap">
+      <div class="sideLnb">
+        <article>
+          <h2>
+            환경설정
+            <span>
+              <img
+                src="./img/ic_arrow_down_01_s_normal.57adc5b1.png"
+                alt="하위 메뉴 오픈"
+              />
+            </span>
+          </h2>
+          <ul>
+            <li>
+              <div>
+                <span><img src="./img/navicon.png" alt="" /></span>
+                <a href="config.html">
+                  <span class="active">정규직</span>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div>
+                <span><img src="./img/navicon.png" alt="" /></span>
+                <span>일용직</span>
+              </div>
+            </li>
+            <li>
+              <div>
+                <span><img src="./img/navicon.png" alt="" /></span>
+                <span>임원</span>
+              </div>
+            </li>
+            <li>
+              <div>
+                <span><img src="./img/navicon.png" alt="" /></span>
+                <span>프리랜서</span>
+              </div>
+            </li>
+          </ul>
+        </article>
+        <article>
+          <h2>
+            근로계약서 작성
+            <span>
+              <img
+                src="./img/ic_arrow_down_01_s_normal.57adc5b1.png"
+                alt="하위 메뉴 오픈"
+              />
+            </span>
+          </h2>
+          <ul>
+            <li>
+              <div>
+                <span><img src="./img/navicon.png" alt="" /></span>
+                <span>정규직</span>
+              </div>
+            </li>
+            <li>
+              <div>
+                <span><img src="./img/navicon.png" alt="" /></span>
+                <span>일용직</span>
+              </div>
+            </li>
+            <li>
+              <div>
+                <span><img src="./img/navicon.png" alt="" /></span>
+                <span>임원</span>
+              </div>
+            </li>
+            <li>
+              <div>
+                <span><img src="./img/navicon.png" alt="" /></span>
+                <span>프리랜서</span>
+              </div>
+            </li>
+          </ul>
+        </article>
+        <article>
+          <h2>
+            근로계약서 목록
+            <span>
+              <img
+                src="./img/ic_arrow_down_01_s_normal.57adc5b1.png"
+                alt="하위 메뉴 오픈"
+              />
+            </span>
+          </h2>
+          <ul>
+            <li>
+              <div>
+                <span><img src="./img/navicon.png" alt="" /></span>
+                <span>작성중 목록</span>
+              </div>
+            </li>
+            <li>
+              <div>
+                <span><img src="./img/navicon.png" alt="" /></span>
+                <span>서명대기 목록</span>
+              </div>
+            </li>
+            <li>
+              <div>
+                <span><img src="./img/navicon.png" alt="" /></span>
+                <span>서명완료 목록</span>
+              </div>
+            </li>
+          </ul>
+        </article>
+      </div>
+      <div class="sizeTool">
+        <span></span>
+      </div>
+    </section>
+    <section class="contents">
+      <div>
+        <article class="contentHeader">
+          <h2>정규직 환경설정</h2>
+          <div class="iconWrap">
+            <a href="configNew.html">
+              <span>
+                <img src="./img/writeicon.png" alt="작성" />
+              </span>
+            </a>
+            <span>
+              <img
+                src="./img/deleteicon.png"
+                alt="삭제"
+                onclick="alertToggle()"
+              />
+            </span>
+            <span>
+              <img
+                src="./img/icon-func-favorite-off.70853147.png"
+                alt="즐겨찾기"
+              />
+            </span>
+          </div>
+        </article>
+        <article class="searchWrap">
+          <div class="searchBox">
+            <label for="searchTitle">근로형태</label>
+            <input
+              type="text"
+              id="searchTitle"
+              oninput="search(this)"
+              value=""
+            />
+          </div>
+          <div class="search">
+            <img src="./img/searchicon.png" alt="검색" />
+          </div>
+        </article>
+        <article class="contentTable">
+          <table>
+            <thead>
+              <tr>
+                <th>
+                  <input
+                    type="checkbox"
+                    class="allCheck"
+                    id="allCheck"
+                    onchange="checkCounter(this)"
+                  />
+                </th>
+                <th>타입명</th>
+                <th>근로형태</th>
+                <th>수습기간</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="searchData">
+                <td>
+                  <input
+                    type="checkbox"
+                    onclick="checkCounter(this)"
+                    class="check"
+                  />
+                </td>
+                <td class="type">기본</td>
+                <td class="jobType">일반근로</td>
+                <td>3개월</td>
+              </tr>
+              <tr class="searchData">
+                <td>
+                  <input
+                    type="checkbox"
+                    onclick="checkCounter(this)"
+                    class="check"
+                  />
+                </td>
+                <td class="type">야간</td>
+                <td class="jobType">단시간근로</td>
+                <td>2개월</td>
+              </tr>
+              <tr class="searchData">
+                <td>
+                  <input
+                    type="checkbox"
+                    onclick="checkCounter(this)"
+                    class="check"
+                  />
+                </td>
+                <td class="type">기본</td>
+                <td class="jobType">일반근로</td>
+                <td>3개월</td>
+              </tr>
+              <tr class="searchData">
+                <td>
+                  <input
+                    type="checkbox"
+                    onclick="checkCounter(this)"
+                    class="check"
+                  />
+                </td>
+                <td class="type">기본</td>
+                <td class="jobType">일반근로</td>
+                <td>3개월</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+      </div>
+    </section>
+    <section class="drawBarWrap">
+      <div>
+        <span class="count"></span>
+        <span>선택 됨</span>
+      </div>
+      <div>
+        <button type="button" onclick="checkDelete()">삭제</button>
+      </div>
+    </section>
+    <section class="modalWrap">
+      <article class="alertWrap">
+        <img src="./img/alert1.png" alt="경고창" />
+        <h2>현재 선택된 데이터를 삭제하시겠습니까?</h2>
+        <div class="alertBtnWrap">
+          <button type="button" onclick="closeModal()">취소</button>
+          <button type="button" onclick="closeModal()">확인</button>
+        </div>
+      </article>
+    </section>
+    <script>
+      function search(e) {
+        const searchData = document.querySelectorAll(".searchData");
+
+        searchData.forEach((ele) => {
+          ele.style.display =
+            srchText(ele, ".jobType", e.value) ||
+            srchText(ele, ".type", e.value)
+              ? ""
+              : "none";
+        });
+      }
+
+      function srchText(ele, child, val) {
+        ele = isNull(ele);
+        child = isNull(child);
+        val = isNull(val);
+
+        if (isFalse([ele, child, val])) {
+          console.log(isFalse([ele, child, val]));
+          return false;
+        }
+
+        console.log(getChild(ele, child).innerText.indexOf(val) !== -1);
+        return getChild(ele, child).innerText.indexOf(val) !== -1;
+      }
+
+      function getChild(ele, child) {
+        return ele.querySelector(child);
+      }
+
+      /**
+       * common
+       */
+      function isNull(target) {
+        // null값 확인 null이면 false 리턴
+        return target !== undefined || target !== null || target !== ""
+          ? target
+          : false;
+      }
+
+      function isFalse(arr) {
+        //배열의 길이가 0보다 작으면 false 값 리턴
+        if (!isArray(arr)) {
+          return false;
+        }
+
+        // arr.filter((item) => {
+        //   return item === false;
+        // });
+      }
+
+      function isArray(arr) {
+        // 배열의 길이가 0보다 크면 true 값 리턴
+        return arr.length > 0;
+      }
+    </script>
+    <script src="./drawBar.js"></script>
+    <script src="./alert.js"></script>
+  </body>
+</html>
